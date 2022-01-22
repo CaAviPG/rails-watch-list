@@ -1,0 +1,10 @@
+<h1>Mi lista </h1>
+<ul>
+  <% @lists.each do |list| %>
+    <li><%= link_to list.name %></li>
+  <% end %>
+</ul>
+
+<%# <h3>Agregar</h3>
+<a href="/lists/new">New</a> %>
+<%= link_to "new +", new_list_path %>
